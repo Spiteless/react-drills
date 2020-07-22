@@ -43,4 +43,3 @@ export default class FilterList extends React.Component {
         )
     }
 }
-
