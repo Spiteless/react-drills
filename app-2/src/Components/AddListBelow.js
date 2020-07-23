@@ -38,4 +38,3 @@ export default  class TextOnScreen extends Component {
             </div>
     )}
 }
-
