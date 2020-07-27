@@ -1,10 +1,21 @@
-import React from 'react'
 
-class List extends React.Component{
+import React from 'react';
+import Todo from "./Todo";
 
-    render() { 
-    return <div className = "List-Item"> I am a List Item, short and stout</div>
-    }
+export default class List extends React.Component {
+  render() {
+    let list = this.props.todos.map((element, index) => {
+      return <Todo key={index} task={element} />;
+    });
+    
+    return(
+
+        <div className = "todo-item">
+            <ul>
+            { list }
+            </ul>
+        </div>
+
+        )
+  }
 }
-
-export default List
